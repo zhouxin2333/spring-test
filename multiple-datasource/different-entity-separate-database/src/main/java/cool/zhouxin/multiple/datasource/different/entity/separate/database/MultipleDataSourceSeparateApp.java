@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2020/6/3 10:53
  */
 @SpringBootApplication
-public class MainApplication {
+public class MultipleDataSourceSeparateApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(MainApplication.class, args);
+        SpringApplication.run(MultipleDataSourceSeparateApp.class, args);
     }
 }
