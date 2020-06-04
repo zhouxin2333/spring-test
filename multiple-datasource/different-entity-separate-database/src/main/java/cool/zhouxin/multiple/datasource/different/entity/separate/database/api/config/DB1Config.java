@@ -1,4 +1,4 @@
-package cool.zhouxin.different.entity.separate.database.api.config;
+package cool.zhouxin.multiple.datasource.different.entity.separate.database.api.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -23,7 +23,7 @@ import java.util.HashMap;
  */
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "cool.zhouxin.different.entity.separate.database.api.repository.db1",
+@EnableJpaRepositories(basePackages = "cool.zhouxin.multiple.datasource.different.entity.separate.database.api.repository.db1",
         entityManagerFactoryRef = "db1EntityManagerFactory",
         transactionManagerRef= "db1TransactionManager"
 )
@@ -50,7 +50,7 @@ public class DB1Config {
     public LocalContainerEntityManagerFactoryBean db1EntityManagerFactory(EntityManagerFactoryBuilder builder) {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = builder
                 .dataSource(db1DataSource())
-                .packages("cool.zhouxin.different.entity.separate.database.api.entity.db1")
+                .packages("cool.zhouxin.multiple.datasource.different.entity.separate.database.api.entity.db1")
                 .build();
         HashMap<String, Object> properties = new HashMap<>();
         properties.put("hibernate.hbm2ddl.auto", "update");

@@ -1,4 +1,4 @@
-package cool.zhouxin.different.entity.separate.database;
+package cool.zhouxin.multiple.datasource.different.entity.separate.database;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

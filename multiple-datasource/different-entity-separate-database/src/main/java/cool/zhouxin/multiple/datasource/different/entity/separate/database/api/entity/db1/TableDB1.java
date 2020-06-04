@@ -1,4 +1,4 @@
-package cool.zhouxin.different.entity.separate.database.api.entity.db1;
+package cool.zhouxin.multiple.datasource.different.entity.separate.database.api.entity.db1;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
